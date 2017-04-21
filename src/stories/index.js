@@ -1,21 +1,10 @@
 import React from 'react';
-import { storiesOf, action } from '@kadira/storybook';
-import Button from '../index';
+import { storiesOf } from '@kadira/storybook';
+import BRadialChart from '../index';
 
-storiesOf('Button', module)
-  .add('default view', () => (
-    <Button onClick={ action('button clicked') }>Hello</Button>
-  ))
-  .add('some emojies as the text', () => (
-    <Button>😀 😎 👍 💯</Button>
-  ))
-  .add('custom styles', () => {
-    const style = {
-      fontSize: 20,
-      textTransform: 'uppercase',
-      color: '#FF8833',
-    };
-    return (
-      <Button style={ style }>Hello</Button>
-    );
-  });
+import 'react-vis/dist/style.css';
+
+storiesOf('React vis', module)
+  .add('#234', () => (
+    <BRadialChart height={500} />
+  ));
