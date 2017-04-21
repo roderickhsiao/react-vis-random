@@ -6,5 +6,10 @@ import 'react-vis/dist/style.css';
 
 storiesOf('React vis', module)
   .add('#234', () => (
-    <BRadialChart height={500} />
+    <div>
+      <h3>
+        👍 react-vis issue #234 - opacity was incorrectly override
+      </h3>
+      <BRadialChart height={500} />
+    </div>
   ));

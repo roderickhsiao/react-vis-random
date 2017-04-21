@@ -57,7 +57,7 @@ class BRadialChart extends React.Component {
         props = Object.assign({}, PROPS_BY_TYPE['donut-focus'], {opacity: 1});
       }
       else {
-        props = Object.assign({}, PROPS_BY_TYPE.donut, {opacity: .83});
+        props = Object.assign({}, PROPS_BY_TYPE.donut, {opacity: .6});
       }
 
       return Object.assign({}, props, d);
